@@ -4,7 +4,10 @@ import { useQuery } from "react-query";
 import { GET_ALL_TASKS } from "../../constant/queryKey";
 
 const getTasks = async ({ pageSize, page, sort, name }) => {
-  const { data } = await axios.get(`http://localhost:5000/api/task`, {
+  const { data } = await axios.get(`https://nestjstodoapi.onrender.com/api/task
+
+
+`, {
     params: {
       pageSize,
       page,

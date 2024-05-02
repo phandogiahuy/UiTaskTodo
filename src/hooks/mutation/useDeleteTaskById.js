@@ -3,7 +3,10 @@ import { GET_ALL_TASKS } from "../../constant/queryKey";
 import axios from "axios";
 
 const deleteTasktById = async (id) => {
-  const { data } = await axios.delete(`http://localhost:5000/api/task/${id}`);
+  const { data } = await axios.delete(`https://nestjstodoapi.onrender.com/api/task
+
+
+/${id}`);
   return data;
 };
 const useDeleteTaskById = () => {

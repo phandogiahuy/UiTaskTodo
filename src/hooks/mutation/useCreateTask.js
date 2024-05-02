@@ -3,7 +3,10 @@ import { GET_ALL_TASKS } from "../../constant/queryKey";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 const createTask = async ({ name, description, priority }) => {
-  const { data } = await axios.post(`http://localhost:5000/api/task`, {
+  const { data } = await axios.post(`https://nestjstodoapi.onrender.com/api/task
+
+
+`, {
     name,
     description,
     priority,

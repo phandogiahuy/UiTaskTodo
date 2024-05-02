@@ -2,7 +2,10 @@ import { useMutation, useQueryClient } from "react-query";
 import { GET_ALL_TASKS } from "../../constant/queryKey";
 import axios from "axios";
 const editTask = async ({ id, name, description, priority, status }) => {
-  const { data } = await axios.patch(`http://localhost:5000/api/task/${id}`, {
+  const { data } = await axios.patch(`https://nestjstodoapi.onrender.com/api/task
+
+
+/${id}`, {
     name,
     description,
     priority,
